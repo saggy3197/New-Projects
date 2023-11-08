@@ -1,0 +1,1 @@
+insert into employee values (  "c6260",9,9,4,"2023-06-11T18:30:00.000+00:00","nine month", "Software engg"," python devoloper", 4, 4, 4,4,"xyz");

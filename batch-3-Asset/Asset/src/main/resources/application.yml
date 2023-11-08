@@ -1,0 +1,16 @@
+spring:
+    application:
+            name: asset
+
+server:
+    port: 9090
+
+eureka:
+    client:
+        fetchRegistry: true
+        registerWithEureka: true
+        serviceUrl:
+            defaultZone: http://localhost:8761/eureka/
+
+    instance:
+        preferIpAddress: true            

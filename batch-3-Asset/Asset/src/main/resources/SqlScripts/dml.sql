@@ -1,0 +1,1 @@
+insert into asset values(6201,'Bhushan','Devloper','HR','2022-01-12','Manager','2023-03-01','101');

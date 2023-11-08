@@ -1,0 +1,13 @@
+create table employee (empcode varchar(200) primary key not null,
+postinid int,
+onsiteothercountery int,
+onsiteothercounterydesc int ,
+probetionstartdate date, 
+probation varchar(100),
+status varchar(100),
+role varchar(100),
+reportingto int,
+designationid int, 
+division int,
+bandid int, 
+createdby varchar(100));

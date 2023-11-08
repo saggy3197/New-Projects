@@ -1,0 +1,458 @@
+{
+	"info": {
+		"_postman_id": "3cf01427-7583-496a-81ea-e5ce6bcfa1be",
+		"name": "Asset",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28159763"
+	},
+	"item": [
+		{
+			"name": "Get Req",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/asset/asset/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"asset",
+						"asset",
+						"get"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Req",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/asset/asset/get",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"asset",
+								"asset",
+								"get"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 13 Jul 2023 06:20:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 6201,\n        \"name\": \"Bhushan\",\n        \"type\": \"Devloper\",\n        \"createdby\": \"HR\",\n        \"createddate\": \"2022-01-12T00:00:00\",\n        \"modifiedby\": \"Manager\",\n        \"modifieddate\": \"2023-03-01T00:00:00\",\n        \"empcode\": \"101\"\n    },\n    {\n        \"id\": 6202,\n        \"name\": \"Suyog\",\n        \"type\": \"Devloper\",\n        \"createdby\": \"HR\",\n        \"createddate\": \"2021-06-12T00:00:00\",\n        \"modifiedby\": \"Manager\",\n        \"modifieddate\": \"2023-06-22T00:00:00\",\n        \"empcode\": \"102\"\n    },\n    {\n        \"id\": 6204,\n        \"name\": \"Akshay\",\n        \"type\": \"Devloper\",\n        \"createdby\": \"HR\",\n        \"createddate\": \"2022-01-12T00:00:00\",\n        \"modifiedby\": \"Manager\",\n        \"modifieddate\": \"2023-03-01T00:00:00\",\n        \"empcode\": \"123\"\n    },\n    {\n        \"id\": 6203,\n        \"name\": null,\n        \"type\": null,\n        \"createdby\": null,\n        \"createddate\": null,\n        \"modifiedby\": \"Admin\",\n        \"modifieddate\": null,\n        \"empcode\": null\n    },\n    {\n        \"id\": 6205,\n        \"name\": \"Yuvi\",\n        \"type\": \"finance\",\n        \"createdby\": \"manager\",\n        \"createddate\": \"2022-01-12T00:00:00\",\n        \"modifiedby\": \"Manager\",\n        \"modifieddate\": \"2023-03-01T00:00:00\",\n        \"empcode\": \"222\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 6205,\r\n    \"name\": \"Yuvi\",\r\n    \"type\": \"Devloper\",\r\n    \"empcode\": \"222\",\r\n    \"createdBy\": \"HR\",\r\n    \"createdDate\": \"2022-01-12T00:00:00\",\r\n    \"modifiedBy\": \"Manager\",\r\n    \"modifiedDate\": \"2023-03-01T00:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/asset/addasset",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"asset",
+						"addasset"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6205,\r\n    \"name\": \"Yuvi\",\r\n    \"type\": \"Devloper\",\r\n    \"empcode\": \"222\",\r\n    \"createdBy\": \"HR\",\r\n    \"createdDate\": \"2022-01-12T00:00:00\",\r\n    \"modifiedBy\": \"Manager\",\r\n    \"modifiedDate\": \"2023-03-01T00:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/asset/addasset",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"asset",
+								"addasset"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 13 Jul 2023 06:21:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorCode\": \"400\",\n    \"errorDesc\": \"EmployeeId already exists!\"\n}"
+				},
+				{
+					"name": "Post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6206,\r\n    \"name\": \"Yog\",\r\n    \"type\": \"Devloper\",\r\n    \"empcode\": \"115\",\r\n    \"createdBy\": \"HR\",\r\n    \"createdDate\": \"2022-01-12T00:00:00\",\r\n    \"modifiedBy\": \"Manager\",\r\n    \"modifiedDate\": \"2023-03-01T00:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/asset/addasset",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"asset",
+								"addasset"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 13 Jul 2023 06:22:01 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 6206,\n    \"name\": \"Yog\",\n    \"type\": \"Devloper\",\n    \"createdby\": null,\n    \"createddate\": null,\n    \"modifiedby\": null,\n    \"modifieddate\": null,\n    \"empcode\": \"115\"\n}"
+				}
+			]
+		},
+		{
+			"name": "put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{ \r\n    \"modifiedBy\": \"Admin\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/asset/asset/6203",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"asset",
+						"asset",
+						"6203"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "put",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{ \r\n    \"modifiedBy\": \"Manager\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/asset/asset/6203",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"asset",
+								"asset",
+								"6203"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 13 Jul 2023 06:22:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Data Updated"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/asset/6205",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"asset",
+						"6205"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/asset/6205",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"asset",
+								"6205"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 13 Jul 2023 06:18:08 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 6205,\n    \"name\": \"Yuvi\",\n    \"type\": \"finance\",\n    \"createdby\": \"Manager\",\n    \"createddate\": \"2022-01-12T00:00:00\",\n    \"modifiedby\": \"Manager\",\n    \"modifieddate\": \"2023-03-01T00:00:00\",\n    \"empcode\": \"222\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Patch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"createdby\": \"manager\"\r\n        \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/asset/asset/patch/6205",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"asset",
+						"asset",
+						"patch",
+						"6205"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Patch",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \r\n        \"createdby\": \"manager\"\r\n        \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/asset/asset/patch/6205",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"asset",
+								"asset",
+								"patch",
+								"6205"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 13 Jul 2023 06:18:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "patch success"
+				}
+			]
+		}
+	]
+}
